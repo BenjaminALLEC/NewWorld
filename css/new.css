@@ -1,0 +1,64 @@
+header{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	height: 2em;
+	text-align: right;
+	color: white;	
+}
+
+nav{
+	background: #1c2223;
+	height: 5.1em;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-around;
+	margin-right: 10%;
+	margin-left: 5%;
+}
+
+section{
+	background-image: url(../img/monde.jpg);
+	height: 42em;
+}
+
+#presentation{
+}
+
+#images{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 2em; 
+}
+
+/*#boucher{
+	margin: 2em;
+	background-image: url(../img/jardinier.jpg);
+	height: 215px;
+	width: 302px;
+}
+
+#jardinier{
+	margin: 2em;
+	background-image: url(../img/boucher.jpg);
+	height: 215px;
+	width: 302px;
+*/
+
+footer{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#303030+0,6e6e6e+27,474747+100,535353+100,545454+100,404040+100 */
+	background: #303030; /* Old browsers */
+	background: -moz-linear-gradient(top, #303030 0%, #6e6e6e 27%, #474747 100%, #535353 100%, #545454 100%, #404040 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #303030 0%,#6e6e6e 27%,#474747 100%,#535353 100%,#545454 100%,#404040 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #303030 0%,#6e6e6e 27%,#474747 100%,#535353 100%,#545454 100%,#404040 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#404040',GradientType=0 ); /* IE6-9 */
+	height: 10em;
+}
