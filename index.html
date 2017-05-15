@@ -1,41 +1,46 @@
-<!DOCTYPE html>
-<html lang="fr">
+ <html>
 	<head>
 		<meta charset="utf-8" />
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" href="css/style.css"/>
-		<title>New World</title>
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="icon" href="images/favicon.ico">
+		<title>+1 & -1</title>
 	</head>
 	<body>
-		<header>
-			<a href="#">France </a> |<a href="#"> Connexion/Inscription</a>
-		</header>
-		<div class="wrapper">
-			<nav id="navigation" role="navigation">
-				<ul>
-					<li><a href="index.php"><h3>N.W.</h3></a></li>
-					<li><a href="acheter.php"><h3>Acheter</h3></a></li>
-					<li><a href="produire.php"><h3>Produire</h3></a></li>
-					<li><a href="distribuer"><h3>Distribuer</h3></a></li>
-				</ul>
-			</nav>
-			<section class="content">
-				<article id="presentation">
-					<aside id="images">
-						<img src="img/jardinier.jpg" alt="jardinier" style="width:302px;height:215px;">
-						<img src="img/boucher.jpg" alt="Boucher" style="width:302px;height:215px;">
-					</aside>
-				</article>
-				<article id="formulaire">
-			
-				</article>
-			</section>
-		</div>
-		<footer>
-			
-		</footer>
+		<script language="JavaScript">
+			function plus1(nb){
+				var txt=document.form.nombre.value;
+				if(parseInt(txt)>0 && parseInt(txt)<10)
+				{
+					document.form.nombre.value=parseInt(txt)+nb;
+					var pls=parseInt(txt)+nb;
+				 	//affichage du résultat
+				 	document.form.nombre.value=pls;
+				}
+				 
+			}
+		</script>
+		<h1>Plus 1 et moins 1</h1>
+		<form name="form">
+			<table>
+				<tr>
+					<td>Nombre</td>
+				</tr>
+				<tr>
+					<td><input name="nombre" type="int" size="10"></td>
+					<td><input type="button" value="+" onclick="plus1(1)"></td>
+					<td><input type="button" value="-" onclick="plus1(-1)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Reset" onclick="this.form.reset();"></td>
+				</tr>
+			</table>
+		</form>
+
+		
+
 	</body>
 </html>
+
